@@ -45,6 +45,43 @@ document.querySelector("#random-element p").style.backgroundColor
 //getElementsByTagName(tag)          npr   getElementsByTagName(p)   nam stavi svaki paragraf u jednom nizu 
 //querySelector  u zagradu pisemo neki selector kao sto bismo pisali u CSS, vraca prvi element iz tog niza
 
+let listItem = document.getElementById("items")
+//parentNode
+console.log(listItem.parentNode)
+listItem.parentNode.style.backgroundColor = "lightblue"
+
+
+//parentElement
+
+console.log(listItem.parentElement)
+
+//childNodes
+
+console.log(listItem.childNodes)
+
+listItem.childNodes[1].style.backgroundColor = "brown"
+
+//children (element)
+
+console.log(listItem.children)
+listItem.children[0].style.backgroundColor="yellow"
+
+
+//firstChild
+//firstElementChild
+
+listItem.firstElementChild; //listItem.children[0]
+listItem.lastElementChild; //listItem.children[listItem.children.length]
+
+
+//sibling
+console.log(listItem.previousElementSibling)
+
+listItem.previousElementSibling.style.color="brown"
+
+console.log(listItem.nextElementsibling)
+
+let drugiElement = document.getElementsByClassName("list-item")[1]
 
 
 
